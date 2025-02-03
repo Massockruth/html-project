@@ -15,90 +15,109 @@
                 <li><a href="#Skills">Skills</a></li>
                 <li><a href="#Education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#transcript">Unofficial Transcript</a></li>
             </ul>
         </nav>
     </header>
     <img src="cover1.png" alt="Cover Picture" class="cover-picture">
     <main>
-        <section>
-          <div class="container">  
-            <div class="left">
-            <a href="about.html">
-                <img src="Professional photo.png" alt="Description of the image" width="300" height="300" class="circle" class="left">
-            </a></div>
-                <div>
-            <h1 style="text-align: center;">RUTH MASSOCK</h1>
-            <h2 style="text-align: center;">Computer Engineering Student</h2>
-            <p style="text-align: center;">Hi, I'm Ruth Massock,a dedicated and motivated junior pursuing a Bachelor in Computer Engineering with a minor in Computer Science at Florida State University who resently earned my Associate in Arts Degree from Tallahassee State College. My passion lies in the realm of technology, where I have cultivated a robust understanding of programming languages, software development, and system operations.</p>
-        </div>
-        
-            <p></p>
-        </section>   
-        <hr class="separator">
-
         <section id="about">
             <h3 style="text-align: center;">About Me</h3> 
             <p>As a junior pursuing a Bachelor in Computer Engineering with a minor in Computer Science at Florida State University, I am passionate about leveraging technology to solve complex problems and drive innovation. My academic journey has equipped me with a solid foundation in computer programming, including languages such as C, Java, and Python, and exposure to Unix, HTML, and data structures.</p>
-            <p>I am currently focusing on practical applications of my skills through projects such as designing and implementing data structures in C++, including binary trees and hash tables. My recent projects involve developing a password server with encrypted passwords and analyzing file data with STL containers, demonstrating my proficiency in both programming and algorithmic problem-solving..</p>
-            <p>Additionally, I am enthusiastic about exploring opportunities and am actively seeking internships to deepen my knowledge and experience in this field. My coursework has provided me with a strong grasp of algorithms and data structures, and I am eager to contribute to innovative projects that push the boundaries of technology.</p>         
         </section>
         <hr class="separator">
 
         <section id="projects">
             <h3 style="text-align: center;">Projects</h3>
-        <div class="container">
-            <div class="box box1">
-                <img src="caculator.png" alt="Description of the image" width="300" height="300">
-               <p><a href="calculator.html" class="button">Calculator</a></p></div>
-            <div class="box box2">
-                <img src="numberstowords.jpg" alt="Description of the image" width="300" height="300">
-                <p><a href="numbertoword.html" class="button">Numbers to words</a></p></div>
-            <div class="box box3">
-                <img src="GitHub-Logo.png" alt="Description of the image" width="350" height="300">
-                <p><a href=https://github.com/Massockruth/ target="_blank" class="button">Go to my Github</a></p>
-                </div>
-        </div>
-         </section>
-         
-        
-        <hr class="separator">
-
-        <section id="Skills">
-             <div>
-                <h3 style="text-align: center;">Skills</h3>
-                <ul style="text-align: center;">
-                    <li><span class="tag">Programming Languages:</span> C, Java, Python</li>
-                    <li><span class="tag">Web Technologies:</span> HTML, CSS</li>
-                    <li><span class="tag">Data Structures:</span> Binary Trees, Hash Tables</li>
-                    <li><span class="tag">Algorithms:</span> Sorting, Searching</li>
-                    <li><span class="tag">Tools:</span> Unix, Git</li>
+            <div class="project-details">
+                <h4>Embedded System Project: Joystick-Controlled Stepper Motor</h4>
+                <ul>
+                    <li>Designed and implemented a motor controller using the MSP430 Launchpad and Booster Pack MKII.</li>
+                    <li>Developed a joystick-based interface for precise directional and speed control of the stepper motor.</li>
+                    <li>Integrated debugging functionality to monitor and optimize motor performance in real time.</li>
                 </ul>
+                <video controls>
+                    <source src="joystick_stepper_motor.mp4" type="video/mp4">
+                </video>
+                
+                <h4>Video Graphics Array (VGA) Project: VGA Controller</h4>
+                <ul>
+                    <li>Developed a VGA controller for the DE-1 FPGA board, displaying dynamic colors on a monitor.</li>
+                    <li>Designed and implemented logic to generate video signals and control screen resolution.</li>
+                    <li>Integrated a 7-segment HEX display to process and visualize user inputs in real time.</li>
+                </ul>
+                <video controls>
+                    <source src="vga_controller.mp4" type="video/mp4">
+                </video>
+                
+                <h4>Socket Programming: Two-Way Client-Server Communication</h4>
+                <ul>
+                    <li>Developed a real-time client-server communication system using socket programming in C.</li>
+                    <li>Implemented bidirectional messaging for seamless data exchange between server and client applications.</li>
+                    <li>Optimized system efficiency and reliability using non-blocking I/O and multi-threading techniques.</li>
+                </ul>
+                <video controls>
+                    <source src="socket_communication.mp4" type="video/mp4">
+                </video>
+                
+                <h4>Calculator Project</h4>
+                <ul>
+                    <li>Built a simple calculator using HTML, CSS, and JavaScript.</li>
+                    <li>Implemented basic arithmetic functions with a user-friendly interface.</li>
+                </ul>
+                <video controls>
+                    <source src="calculator.mp4" type="video/mp4">
+                </video>
+                
+                <h4>Numbers to Words Converter</h4>
+                <ul>
+                    <li>Developed a program to convert numerical values to their word equivalents.</li>
+                    <li>Implemented the project using Python with an interactive GUI.</li>
+                </ul>
+                <video controls>
+                    <source src="numberstowords.mp4" type="video/mp4">
+                </video>
             </div>
         </section>
         <hr class="separator">
 
+        <section id="Skills">
+            <h3 style="text-align: center;">Skills</h3>
+            <ul style="text-align: center;">
+                <li><span class="tag">Programming Languages:</span> C, Java, Python</li>
+                <li><span class="tag">Web Technologies:</span> HTML, CSS</li>
+                <li><span class="tag">Data Structures:</span> Binary Trees, Hash Tables</li>
+                <li><span class="tag">Algorithms:</span> Sorting, Searching</li>
+                <li><span class="tag">Tools:</span> Unix, Git</li>
+            </ul>
+        </section>
+        <hr class="separator">
+
         <section id="Education">
-            <div class="section">
-                <h3 style="text-align: center;">Education</h3>
-                <ul style="text-align: center;">
-                    <li>Bachelor in Computer Engineering (Minor in Computer Science) - Florida State University, Expected 2026</li>
-                    <li>Associate in Arts - Tallahassee State College, 2023</li>
-                </ul>
-            </div>
+            <h3 style="text-align: center;">Education</h3>
+            <ul style="text-align: center;">
+                <li>Bachelor in Computer Engineering (Minor in Computer Science) - Florida State University, Expected 2026</li>
+                <li>Associate in Arts - Tallahassee State College, 2023</li>
+            </ul>
+        </section>
+        <hr class="separator">
+
+        <section id="transcript">
+            <h3 style="text-align: center;">Unofficial Transcript</h3>
+            <p><a href="unofficial_transcript.pdf" target="_blank">Download Unofficial Transcript</a></p>
         </section>
         <hr class="separator">
 
         <section id="contact">
             <h3 style="text-align: center;">Contact</h3>
             <p>Email: <a href="mailto:massockruth56@gmail.com">massockruth56@gmail.com</a></p>
-            <p>LinkedIn: <a href=https://www.linkedin.com/in/ruthmassock/ target="_blank">Ruth Massock</a></p>
-
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/ruthmassock/" target="_blank">Ruth Massock</a></p>
         </section>  
     </main>
-<img src="cover1.png" alt="Cover Picture" class="cover-picture2">
+    <img src="cover1.png" alt="Cover Picture" class="cover-picture2">
     <footer>
         <p>&copy; 2024 Ruth Massock. All rights reserved.</p>
     </footer>
 </body>
-    <script src="main.js"></script>
+<script src="main.js"></script>
 </html>
