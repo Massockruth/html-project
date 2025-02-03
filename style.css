@@ -54,4 +54,44 @@ button:hover {
 .equal:hover {
     background-color: #0056b3;
 }
+body {
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body.day-mode {
+    background-color: white;
+    color: black;
+}
+
+body.night-mode {
+    background-color: black;
+    color: white;
+}
+
+.cover-picture {
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.separator {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.project-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-details ul li {
+    margin: 5px 0;
+}
+
+.tag {
+    font-weight: bold;
+}
 
