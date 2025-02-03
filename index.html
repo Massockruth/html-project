@@ -19,6 +19,83 @@
             </ul>
         </nav>
     </header>
+    <button id="mode-toggle">Toggle Mode</button>
+    <img src="cover1.png" alt="Cover Picture" class="cover-picture">
+    <main>
+        <!-- Your sections here -->
+    </main>
+    <footer>
+        <p>&copy; 2025 Ruth Massock. All rights reserved.</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
+CSS (master.css)
+body {
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body.day-mode {
+    background-color: white;
+    color: black;
+}
+
+body.night-mode {
+    background-color: black;
+    color: white;
+}
+
+.cover-picture {
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+JavaScript (main.js)
+document.getElementById('mode-toggle').addEventListener('click', function() {
+    document.body.classList.toggle('night-mode');
+    document.body.classList.toggle('day-mode');
+});
+This will add a button to toggle between day and night modes and an animation for the cover picture. You can further customize the styles and animations to fit your preferences. Let me know if you need any more help!
+
+
+Edit in Pages
+
+
+
+AI-generated content may be incorrect
+You said:
+
+do everything
+Copilot said:
+Copilot
+Sure thing! Here's the complete HTML, CSS, and JavaScript code for your portfolio with day and night modes, animations, and all the sections you mentioned:
+
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Ruth Massock</title>
+    <link rel="stylesheet" href="master.css">
+</head>
+<body class="day-mode"> 
+    <header>
+        <nav>
+            <ul style="text-align: center;">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#transcript">Unofficial Transcript</a></li>
+            </ul>
+        </nav>
+    </header>
+    <button id="mode-toggle">Toggle Mode</button>
     <img src="cover1.png" alt="Cover Picture" class="cover-picture">
     <main>
         <section id="about">
@@ -114,11 +191,9 @@
             <p>LinkedIn: <a href="https://www.linkedin.com/in/ruthmassock/" target="_blank">Ruth Massock</a></p>
         </section>  
     </main>
-    <img src="cover1.png" alt="Cover Picture" class="cover-picture2">
     <footer>
         <p>&copy; 2025 Ruth Massock. All rights reserved.</p>
     </footer>
+    <script src="main.js"></script>
 </body>
-<script src="main.js"></script>
 </html>
-
