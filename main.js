@@ -1,18 +1,19 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const navLinks = document.querySelectorAll('nav ul li a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault();
-            const targetId = event.target.getAttribute('href').substring(1);
-            const targetSection = document.getElementById(targetId);
-            window.scrollTo({
-                top: targetSection.offsetTop,
-                behavior: 'smooth'
-            });
-        });
+document.addEventListener("DOMContentLoaded", function () {
+    // Name and site animation
+    const siteTitle = document.createElement("h1");
+    siteTitle.textContent = "Welcome to Ruth Massock's Portfolio";
+    siteTitle.classList.add("animated-title");
+    document.body.prepend(siteTitle);
+
+    // Dark/Light mode toggle
+    const toggleButton = document.createElement("button");
+    toggleButton.textContent = "Toggle Dark Mode";
+    toggleButton.classList.add("mode-toggle");
+    document.body.prepend(toggleButton);
+
+    toggleButton.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
     });
 });
-document.getElementById('mode-toggle').addEventListener('click', function() {
-    document.body.classList.toggle('night-mode');
-    document.body.classList.toggle('day-mode');
-});
+
+
