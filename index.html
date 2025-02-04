@@ -5,10 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Ruth Massock</title>
     <link rel="stylesheet" href="master.css">
+    <script defer src="main.js"></script>
 </head>
 <body> 
 
-    <!-- Navigation Bar -->
+    <!-- Day/Night Mode Toggle -->
+    <button id="theme-toggle">Toggle Dark Mode</button>
+
+    <!-- Animated Intro -->
+    <div class="intro">
+        <h1 id="name-animation">Ruth Massock</h1>
+        <p id="site-animation">Welcome to my portfolio</p>
+    </div>
+
     <header>
         <nav>
             <ul>
@@ -22,71 +31,81 @@
         </nav>
     </header>
 
-    <!-- Cover Image -->
     <img src="cover1.png" alt="Cover Picture" class="cover-picture">
 
-    <!-- Main Content -->
     <main>
+        <!-- About Section -->
         <section id="about">
             <h3>About Me</h3> 
-            <p>As a junior pursuing a Bachelor in Computer Engineering with a minor in Computer Science at Florida State University, I am passionate about leveraging technology to solve complex problems and drive innovation. My academic journey has equipped me with a solid foundation in computer programming, including languages such as C, Java, and Python, and exposure to Unix, HTML, and data structures.</p>
+            <p>I am a junior pursuing a Bachelor in Computer Engineering with a minor in Computer Science at Florida State University. My studies have given me strong programming skills in C, Java, Python, Unix, HTML, and data structures.</p>
         </section>
+
         <hr class="separator">
 
         <!-- Projects Section -->
         <section id="projects">
             <h3>Projects</h3>
-            <div class="project-details">
-                <h4>Embedded System Project: Joystick-Controlled Stepper Motor</h4>
-                <ul>
-                    <li>Designed and implemented a motor controller using the MSP430 Launchpad and Booster Pack MKII.</li>
-                    <li>Developed a joystick-based interface for precise directional and speed control of the stepper motor.</li>
-                    <li>Integrated debugging functionality to monitor and optimize motor performance in real time.</li>
-                </ul>
-                <video controls>
+
+            <div class="project">
+                <h4>Joystick-Controlled Stepper Motor</h4>
+                <p>Designed a motor controller using the MSP430 Launchpad and Booster Pack MKII.</p>
+                <video width="300" height="180" controls>
                     <source src="IMG_2152.mov" type="video/mp4">
                 </video>
-                
-                <h4>VGA Controller Project</h4>
-                <ul>
-                    <li>Developed a VGA controller for the DE-1 FPGA board, displaying dynamic colors on a monitor.</li>
-                    <li>Designed and implemented logic to generate video signals and control screen resolution.</li>
-                    <li>Integrated a 7-segment HEX display to process and visualize user inputs in real time.</li>
-                </ul>
-                
-                <h4>Socket Programming: Two-Way Client-Server Communication</h4>
-                <ul>
-                    <li>Developed a real-time client-server communication system using socket programming in C.</li>
-                    <li>Implemented bidirectional messaging for seamless data exchange between server and client applications.</li>
-                    <li>Optimized system efficiency and reliability using non-blocking I/O and multi-threading techniques.</li>
-                </ul>
-                
-                <h4>Calculator Project</h4>
-                <ul>
-                    <li>Built a simple calculator using HTML, CSS, and JavaScript.</li>
-                    <li>Implemented basic arithmetic functions with a user-friendly interface.</li>
-                </ul>
-                <img src="caculator.png" alt="Calculator Project">
-                
-                <h4>Numbers to Words Converter</h4>
-                <ul>
-                    <li>Developed a program to convert numerical values to their word equivalents.</li>
-                    <li>Implemented the project using Python with an interactive GUI.</li>
-                </ul>
-                <img src="numberstowords.jpg" alt="Number to Words Converter">
+                <p><a href="FSU Ruth Massock transcript .pdf" target="_blank">Project Report</a></p>
             </div>
+
+            <div class="project">
+                <h4>Calculator Project</h4>
+                <p>Built a simple calculator using HTML, CSS, and JavaScript.</p>
+                <img src="caculator.png" alt="Calculator Project" width="200">
+                <p><a href="calculator.html" target="_blank">View Project</a></p>
+            </div>
+
+            <div class="project">
+                <h4>Numbers to Words Converter</h4>
+                <p>Developed a program to convert numerical values to words.</p>
+                <img src="numberstowords.jpg" alt="Numbers to Words Converter" width="200">
+                <p><a href="numbertoword.html" target="_blank">View Project</a></p>
+            </div>
+
+            <div class="project">
+                <h4>Video Graphics Array (VGA) Controller</h4>
+                <p>Developed a VGA controller for the DE-1 FPGA board, displaying dynamic colors on a monitor.</p>
+                <ul>
+                    <li>Designed logic for video signals and screen resolution.</li>
+                    <li>Integrated a 7-segment HEX display for real-time input visualization.</li>
+                </ul>
+                <img src="computer.webp" alt="VGA Controller" width="200">
+                <p><a href="vga_project.html" target="_blank">View Project</a></p>
+            </div>
+
+            <div class="project">
+                <h4>Socket Programming: Two-Way Client-Server Communication</h4>
+                <p>Developed a real-time client-server communication system using socket programming in C.</p>
+                <ul>
+                    <li>Implemented bidirectional messaging.</li>
+                    <li>Used non-blocking I/O and multi-threading for efficiency.</li>
+                </ul>
+                <p><a href="socket_project.html" target="_blank">View Project</a></p>
+            </div>
+
         </section>
+
         <hr class="separator">
 
         <!-- Skills Section -->
         <section id="skills">
             <h3>Skills</h3>
-            <p><span class="tag">Programming Languages:</span> C, C++, C#, Java, Pascal, Python, MATLAB, HDL, VHDL, Verilog, JavaScript, ARM</p>
-            <p><span class="tag">Operating Systems:</span> Windows, Unix, Linux, MacOS, Raspberry Pi OS</p>
-            <p><span class="tag">Software & Tools:</span> Visual Studio, Multisim, Questa, CCS, GitHub, Microsoft Office Suite, Git, Quartus</p>
-            <p><span class="tag">Web Development:</span> HTML, CSS, JavaScript</p>
-            <p><span class="tag">Certifications:</span> Google IT Support Certification</p>
+            <ul>
+                <li><b>Programming:</b> C, C++, Java, Python, MATLAB, VHDL, Verilog, JavaScript</li>
+                <li><b>Operating Systems:</b> Windows, Unix, Linux, MacOS</li>
+                <li><b>Software & Tools:</b> Visual Studio, Git, Quartus, CCS</li>
+                <li><b>Web Development:</b> HTML, CSS, JavaScript</li>
+                <li><b>Certifications:</b> Google IT Support Certification</li>
+            </ul>
         </section>
+
         <hr class="separator">
 
         <!-- Education Section -->
@@ -95,13 +114,15 @@
             <p>Bachelor in Computer Engineering (Minor in Computer Science) - Florida State University, Expected 2026</p>
             <p>Associate in Arts - Tallahassee State College, 2023</p>
         </section>
+
         <hr class="separator">
 
         <!-- Unofficial Transcript -->
         <section id="transcript">
             <h3>Unofficial Transcript</h3>
-            <p><a href="FSU Ruth Massock transcript .pdf" target="_blank">Download Unofficial Transcript</a></p>
+            <p><a href="FSU Ruth Massock transcript .pdf" target="_blank">Download Transcript</a></p>
         </section>
+
         <hr class="separator">
 
         <!-- Contact Section -->
@@ -110,14 +131,12 @@
             <p>Email: <a href="mailto:massockruth56@gmail.com">massockruth56@gmail.com</a></p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/ruthmassock/" target="_blank">Ruth Massock</a></p>
         </section>  
+
     </main>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Ruth Massock. All rights reserved.</p>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="main.js"></script>
 </body>
 </html>
