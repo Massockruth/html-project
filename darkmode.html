@@ -1,0 +1,55 @@
+Creating an animated dark mode/light mode toggle in HTML and CSS is a fun project! Here's a simple example to get you started:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Toggle</title>
+    <style>
+        body {
+            transition: background-color 0.5s, color 0.5s;
+        }
+        .dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        .toggle-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #000000;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.5s, color 0.5s;
+        }
+        .dark-mode .toggle-button {
+            background-color: #ffffff;
+            color: #000000;
+        }
+    </style>
+</head>
+<body class="light-mode">
+    <button class="toggle-button" onclick="toggleMode()">Toggle Dark Mode</button>
+    <script>
+        function toggleMode() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+            body.classList.toggle('light-mode');
+        }
+    </script>
+</body>
+</html>
+```
+
+This code sets up a basic HTML page with a button to toggle between dark and light modes. The transition effects make the change smooth and visually appealing.
+
+Feel free to customize the styles and functionality to better suit your needs! If you have any questions or need further assistance, just let me know.
